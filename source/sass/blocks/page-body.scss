@@ -1,0 +1,15 @@
+.page-body {
+  position: relative;
+  margin: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 15px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(231, 229, 229, 0.9);
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
