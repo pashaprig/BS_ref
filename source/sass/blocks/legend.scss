@@ -1,0 +1,33 @@
+.legend {
+  background-color: $basic-black;
+  padding-bottom: 29px;
+}
+
+.legend__wrapper {
+  position: relative;
+  min-height: 275px;
+  background: center 120% / contain no-repeat url("../img/legendBCG-shadow.png"),
+  bottom / cover no-repeat url("../img/legendBCG-lions.png"),
+  center / cover no-repeat url("../img/legendBCG-graph.png");
+}
+
+.legend__title {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0 60px 0 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: $basic-white;
+  background: center / cover no-repeat url("../img/legend__titleBCG-shadow.png");
+}
+
+.legend__about {
+  margin: 0;
+  padding: 0 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: $gold;
+}

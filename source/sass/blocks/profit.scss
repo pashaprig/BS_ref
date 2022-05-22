@@ -1,0 +1,58 @@
+.profit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 16px 40px;
+  background-color: $bcg-black;
+}
+
+.profit__title {
+  align-self: flex-start;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: $gold;
+}
+
+.profit__subtitle {
+  margin-bottom: 19px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: $basic-white;
+}
+
+.profit__graph {
+  width: 100%;
+  min-height: 160px;
+  margin-left: -32px;
+  margin-bottom: 19px;
+  background:
+    top / contain no-repeat url("../img/profit-top-shadow.png"),
+    bottom / contain no-repeat url("../img//profit-bottom-shadow.png"),
+    bottom 60% left / cover no-repeat url("../img/profit-bcg.svg");
+}
+
+.profit__item {
+  margin-bottom: 10px;
+  display: flex;
+
+  & p {
+    max-width: 90%;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: $basic-white;
+  }
+}
+
+.profit__item:last-child {
+  margin-bottom: 0;
+}
+
+.profit__item-icon {
+  flex-grow: 1;
+  margin-right: 6px;
+  fill: $basic-white;
+}
