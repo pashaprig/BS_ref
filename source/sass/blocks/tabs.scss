@@ -69,6 +69,7 @@
   &--active {
     display: flex;
     justify-content: end;
+    min-height: 30%;
 
     &[data-index="0"] {
       background: bottom left 30% / contain no-repeat url("../img/tab-shadow.png"),

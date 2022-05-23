@@ -1,7 +1,7 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding: 24px 16px 32px;
   background-color: $bcg-black;
 
@@ -11,23 +11,6 @@
 
 .page-footer__logo {
   margin-bottom: 16px;
-}
-
-.page-footer__social {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 24px;
-}
-
-.page-footer__social-link {
-  &:hover svg {
-    fill: $basic-white;
-  }
-}
-
-.page-footer-icon {
-  fill: $gold;
 }
 
 .page-footer__terms {

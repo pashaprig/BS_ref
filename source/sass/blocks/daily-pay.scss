@@ -19,6 +19,12 @@
   width: 100%;
 }
 
-.daily-pay__about:first-of-type {
-  margin-bottom: 14px;
+.daily-pay__about {
+  &:first-of-type {
+    margin-bottom: 14px;
+  }
+
+  &--ta-center {
+    text-align: center;
+  }
 }
