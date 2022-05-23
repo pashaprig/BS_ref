@@ -1,0 +1,107 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $bcg-black;
+}
+
+.pageNav {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px 16px;
+}
+.pageNav__title {
+  max-width: 70%;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: $gold;
+  text-shadow: $basic-black 2px 0 15px;
+}
+
+.pageNav__tabList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pageNav__tabItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 12px 6px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: $basic-white;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  & svg {
+    fill: $basic-white;
+  }
+
+  &--active {
+    color: $gold;
+    border: 1px solid $gold;
+    border-radius: 4px;
+
+    & svg {
+      fill: $gold;
+    }
+  }
+}
+
+.pageNav__contentList {
+  margin-right: -16px;
+  margin-bottom: 10px;
+  margin-left: -16px;
+}
+
+.pageNav__contentItem {
+  display: none;
+  padding: 24px 16px;
+
+  &--active {
+    display: flex;
+    justify-content: end;
+
+    &[data-index="0"] {
+      background: bottom left 30% / contain no-repeat url("../img/tab-shadow.png"),
+        bottom left -10% / contain no-repeat url("../img/tab0.jpg");
+    }
+
+    &[data-index="1"] {
+      background: bottom left 30% / contain no-repeat url("../img/tab-shadow.png"),
+        bottom left -10% / contain no-repeat url("../img/tab1.jpg");
+    }
+
+    &[data-index="2"] {
+      background: bottom left 30% / contain no-repeat url("../img/tab-shadow.png"),
+        bottom left -10% / contain no-repeat url("../img/tab2.jpg");
+    }
+
+    &[data-index="3"] {
+      background: bottom left 30% / contain no-repeat url("../img/tab-shadow.png"),
+        bottom left -10% / contain no-repeat url("../img/tab3.jpg");
+    }
+
+    &[data-index="4"] {
+      background: bottom left 30% / contain no-repeat url("../img/tab-shadow.png"),
+        bottom left -10% / contain no-repeat url("../img/tab4.jpg");
+    }
+
+    &[data-index="5"] {
+      background: bottom left 30% / contain no-repeat url("../img/tab-shadow.png"),
+        bottom left -10% / contain no-repeat url("../img/tab5.jpg");
+    }
+  }
+}
+
+.pageNav-icon {
+  margin-right: 6px;
+}
