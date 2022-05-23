@@ -52,7 +52,11 @@
 }
 
 .profit__item-icon {
-  flex-grow: 1;
   margin-right: 6px;
   fill: $basic-white;
+
+  &--dollar {
+    margin-left: 7px;
+    margin-right: 11px;
+  }
 }

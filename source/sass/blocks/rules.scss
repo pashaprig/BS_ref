@@ -32,7 +32,11 @@
 }
 
 .rules__item-icon {
-  flex-grow: 1;
   margin-right: 4px;
   fill: $basic-black;
+
+  &--dollar {
+    margin-left: 6px;
+    margin-right: 8px;
+  }
 }
