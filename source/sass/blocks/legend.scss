@@ -1,6 +1,11 @@
 .legend {
   background-color: $basic-black;
   padding-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 140px;
+    padding-bottom: 0;
+  }
 }
 
 .legend__wrapper {
@@ -9,6 +14,13 @@
   background: center 120% / contain no-repeat url("../img/legendBCG-shadow.png"),
   bottom / cover no-repeat url("../img/legendBCG-lions.png"),
   center / cover no-repeat url("../img/legendBCG-graph.png");
+
+  @media (min-width: $tablet-width) {
+    min-height: 350px;
+    background: top right / 50% 20% no-repeat url("../img/legend__desktop__topBCG-shadow.png"),
+    bottom right / 50% no-repeat url("../img/legendBCG-lions.png"),
+    bottom right / 50% no-repeat url("../img/legendBCG-graph.png");
+  }
 }
 
 .legend__title {
@@ -21,6 +33,14 @@
   line-height: 29px;
   color: $basic-white;
   background: center / cover no-repeat url("../img/legend__titleBCG-shadow.png");
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+    max-width: 700px;
+    font-size: 40px;
+    line-height: 49px;
+    background: none;
+  }
 }
 
 .legend__about {
@@ -30,4 +50,12 @@
   font-size: 16px;
   line-height: 20px;
   color: $gold;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 140px;
+    max-width: 540px;
+    font-size: 25px;
+    line-height: 30px;
+  }
 }

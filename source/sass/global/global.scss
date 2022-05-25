@@ -50,3 +50,15 @@ a {
     background-color: transparent;
   }
 }
+
+.mobile-only {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+.desktop-only {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
