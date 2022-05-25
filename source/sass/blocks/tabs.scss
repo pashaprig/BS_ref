@@ -3,13 +3,24 @@
   flex-direction: column;
   align-items: center;
   background-color: $bcg-black;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .pageNav {
   display: flex;
   flex-direction: column;
   padding: 0 16px 16px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+  }
 }
+
 .pageNav__title {
   max-width: 70%;
   font-weight: 600;
@@ -17,6 +28,11 @@
   line-height: 24px;
   color: $gold;
   text-shadow: $basic-black 2px 0 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+    margin-bottom: 12px;
+  }
 }
 
 .pageNav__tabList {
@@ -54,12 +70,25 @@
       fill: $gold;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 6px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 .pageNav__contentList {
   margin-right: -16px;
   margin-bottom: 10px;
   margin-left: -16px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 616px;
+    margin-left: 0;
+    margin-right: 25px;
+  }
 }
 
 .pageNav__contentItem {
@@ -101,8 +130,65 @@
         bottom left -10% / contain no-repeat url("../img/tab5.jpg");
     }
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    &--active {
+      min-height: 100%;
+
+      &[data-index="0"] {
+        background: center right / contain no-repeat url("../img/tab-desktop-right-shadow.png"),
+          center bottom / cover no-repeat url("../img/tab0.jpg");
+      }
+
+      &[data-index="1"] {
+        background: center right / contain no-repeat url("../img/tab-desktop-right-shadow.png"),
+          center bottom / cover no-repeat url("../img/tab1.jpg");
+      }
+
+      &[data-index="2"] {
+        background: center right / contain no-repeat url("../img/tab-desktop-right-shadow.png"),
+          center bottom / cover no-repeat url("../img/tab2.jpg");
+      }
+
+      &[data-index="3"] {
+        background: center right / contain no-repeat url("../img/tab-desktop-right-shadow.png"),
+          center bottom / cover no-repeat url("../img/tab3.jpg");
+      }
+
+      &[data-index="4"] {
+        background: center right / contain no-repeat url("../img/tab-desktop-right-shadow.png"),
+          center bottom / cover no-repeat url("../img/tab4.jpg");
+      }
+
+      &[data-index="5"] {
+        background: center right / contain no-repeat url("../img/tab-desktop-right-shadow.png"),
+          center bottom / cover no-repeat url("../img/tab5.jpg");
+      }
+    }
+  }
 }
 
 .pageNav-icon {
   margin-right: 6px;
+  @media (min-width: $tablet-width) {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.tabs__btn {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 50px;
+    left: 13%;
+    margin-bottom: 0;
+
+    &:hover {
+      text-shadow: $basic-black 1px 0 20px;
+      color: $basic-white;
+      border: 2px solid $basic-white;
+    }
+  }
 }

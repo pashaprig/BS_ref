@@ -6,6 +6,8 @@
   background-color: $bcg-black;
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 32px 64px;
   }
 }
 
@@ -42,4 +44,14 @@
 .page-footer__copyright-title {
   margin-bottom: 8px;
   align-self: self-start;
+}
+
+.page-footer__logo-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px;
+    margin-right: 32px;
+  }
 }
