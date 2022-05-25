@@ -4,6 +4,12 @@
   align-items: center;
   padding: 30px 16px 40px;
   background-color: $bcg-black;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 0 140px 70px 140px;
+    align-items: flex-start;
+  }
 }
 
 .profit__title {
@@ -13,6 +19,15 @@
   font-size: 24px;
   line-height: 29px;
   color: $gold;
+
+  @media (min-width: $tablet-width) {
+    z-index: 1;
+    order: 1;
+    margin-top: 150px;
+    margin-bottom: 16px;
+    font-size: 48px;
+    line-height: 59px;
+  }
 }
 
 .profit__subtitle {
@@ -21,6 +36,15 @@
   font-size: 20px;
   line-height: 24px;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    z-index: 1;
+    order: 2;
+    align-self: start;
+    margin-bottom: 32px;
+    font-size: 25px;
+    line-height: 30px;
+  }
 }
 
 .profit__graph {
@@ -28,15 +52,29 @@
   min-height: 160px;
   margin-left: -32px;
   margin-bottom: 19px;
-  background:
-    top / contain no-repeat url("../img/profit-top-shadow.png"),
-    bottom / contain no-repeat url("../img//profit-bottom-shadow.png"),
+  background: top / contain no-repeat url("../img/profit-top-shadow.png"),
+    bottom / contain no-repeat url("../img/profit-bottom-shadow.png"),
     bottom 60% left / cover no-repeat url("../img/profit-bcg.svg");
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 438px;
+    background: left / contain no-repeat url("../img/profit-desktop-left-shadow.png"),
+    bottom / contain no-repeat url("../img/profit-bottom-shadow.png"),
+    bottom 65% left / 85% no-repeat url("../img/profit-bcg.svg");
+  }
 }
 
 .profit__item {
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   display: flex;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   & p {
     max-width: 90%;
@@ -45,10 +83,21 @@
     line-height: 20px;
     color: $basic-white;
   }
-}
 
-.profit__item:last-child {
-  margin-bottom: 0;
+  @media (min-width: $tablet-width) {
+    & p {
+      padding-bottom: 40px;
+      font-size: 28px;
+      line-height: 34px;
+      border-bottom: 1px solid $basic-white;
+
+      &.p--bb-none {
+        border-bottom: none;
+        padding-bottom: 0;
+
+      }
+    }
+  }
 }
 
 .profit__item-icon {
@@ -58,5 +107,29 @@
   &--dollar {
     margin-left: 7px;
     margin-right: 11px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 36px;
+    height: 36px;
+    margin-right: 11px;
+
+    &--dollar {
+      margin-left: 0;
+    }
+  }
+}
+
+.profit__btn {
+  @media (min-width: $tablet-width) {
+    z-index: 1;
+    order: 3;
+    margin-bottom: 140px;
+  }
+}
+
+.profit__list {
+  @media (min-width: $tablet-width) {
+    order: 4;
   }
 }
