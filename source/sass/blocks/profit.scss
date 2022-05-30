@@ -31,6 +31,8 @@
 }
 
 .profit__subtitle {
+  align-self: flex-start;
+  max-width: 80%;
   margin-bottom: 19px;
   font-weight: 600;
   font-size: 20px;
@@ -61,10 +63,10 @@
     top: 0;
     right: 0;
     width: 60%;
-    height: 438px;
+    height: 380px;
     background: left / contain no-repeat url("../img/profit-desktop-left-shadow.png"),
     bottom / contain no-repeat url("../img/profit-bottom-shadow.png"),
-    bottom 65% left / 85% no-repeat url("../img/profit-bcg.svg");
+    bottom 55% left -400px / 130% no-repeat url("../img/profit-bcg-desktop.svg");
   }
 }
 
